@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: inmemorydb
+
+springdoc:
+  swagger-ui:
+    enabled: ${enable_swagger:true}
+    path: /api-ui.html
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include=*:
